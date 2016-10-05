@@ -5,7 +5,7 @@ MAINTAINER Cisco DevOps <hyungsok@cisco.com>
 RUN yum install python-devel python-pip -y
 RUN curl -o /tmp/get-pip.py https://bootstrap.pypa.io/get-pip.py
 RUN python /tmp/get-pip.py
-RUN pip install pyvmomi django requests mysqlclient tabulate websocket-client
+RUN pip install pyvmomi django requests tabulate 
 
 RUN git clone https://bitbucket.org/Neocyon/cloudportal /opt/cloudportal
 RUN python /opt/cloudportal/manage.py makemigrations
