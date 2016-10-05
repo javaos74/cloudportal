@@ -2,7 +2,7 @@ FROM centos:7
 
 MAINTAINER Cisco DevOps <hyungsok@cisco.com>
 
-RUN yum install python-devel python-pip -y
+RUN yum install git python-devel python-pip -y
 RUN curl -o /tmp/get-pip.py https://bootstrap.pypa.io/get-pip.py
 RUN python /tmp/get-pip.py
 RUN pip install pyvmomi django requests tabulate 
